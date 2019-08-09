@@ -1,0 +1,10 @@
+{:source-paths
+ ["src"]
+
+ :builds
+ {:main {:target     :browser
+         :js-options {:source-map        false
+                      :pretty-print      true
+                      :variable-renaming :off}
+         :modules    {:main {:entries [test.main]}}}}}
+
